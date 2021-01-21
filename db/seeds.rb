@@ -14,3 +14,9 @@ product.save
 
 product = Product.new({ name: "HIIT Rower", price: 1300, image_url: "https://lh3.googleusercontent.com/proxy/K3B1bMCivgjEn4ImvCk2M1rpAGsuqWbxevaonyEE6p6yxADHsrFp42Wy2n51iK5mjlTTsajEYM4rbKoTXzWPOBP77ce4gYfQNrxQ9CiphY3yr8rH1kiSPB-ghM9uOM1mzXYPlLSnP7QJzEYH6d_Kggt0NQ4YX5o", description: "The new StairMaster HIIT Rower makes great HIIT workouts even more effective. Track your workout with detailed metrics, follow one of the built in workout programs, and connect your phone via Bluetooth to save and share your workout. The home gym rowing machine also comes equipped with ANT+ giving you the ability to pair with heart rate trackers and connect to group displays. The HIIT Console now comes standard on StairMaster HIIT products." })
 product.save
+
+supplier = Supplier.new({ name: "Core Home Fitness", phone_number: "800-520-1163", email: "info@corehomefitness.com" })
+supplier.save
+
+supplier = Supplier.new({ name: "Bowflex", phone_number: "800-605-3369", email: "info@bowflex.com" })
+supplier.save
