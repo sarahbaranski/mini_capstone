@@ -5,6 +5,7 @@ class Product < ApplicationRecord
   validates :description, length: { minimum: 2, maximum: 500 }
   #validates :image_url, :with => %r{\.(png|jpg|jpeg)$}i, :message => "must have a valid file type", multiline: true
   belongs_to :supplier
+  has_many :images
 
   def is_discounted
     price <= 300
