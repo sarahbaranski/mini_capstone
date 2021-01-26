@@ -6,6 +6,7 @@ class Product < ApplicationRecord
   #validates :image_url, :with => %r{\.(png|jpg|jpeg)$}i, :message => "must have a valid file type", multiline: true
   belongs_to :supplier
   has_many :images
+  has_many :orders
 
   def is_discounted
     price <= 300
