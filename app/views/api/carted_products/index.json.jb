@@ -1,8 +1,10 @@
-@cartedproducts.map do |cartedproduct|
-  id: cartedproduct.id,
-  user_id: cartedproduct.user_id,
-  product_id: cartedproduct.product_id,
-  quantity: cartedproduct.quantity,
-  status: cartedproduct.status,
-  order_id: cartedproduct.order_id
+@carted_products.map do |carted_product|
+  {
+    id: carted_product.id,
+    user_id: carted_product.user_id,
+    product_id: carted_product.product_id,
+    quantity: carted_product.quantity,
+    status: carted_product.status,
+    order_id: carted_product.order_id,
+  }
 end
