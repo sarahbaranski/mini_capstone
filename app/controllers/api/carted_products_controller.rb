@@ -10,6 +10,7 @@ class Api::CartedProductsController < ApplicationController
       product_id: params[:product_id],
       quantity: params[:quantity],
       status: "carted",
+      order_id: "",
     })
     @carted_product.save
     render "show.json.jb"
