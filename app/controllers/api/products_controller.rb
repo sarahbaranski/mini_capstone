@@ -17,6 +17,7 @@ class Api::ProductsController < ApplicationController
     else
       @products = @products.order(id: :asc)
     end
+    render "index.json.jb"
   end
 
   def create
